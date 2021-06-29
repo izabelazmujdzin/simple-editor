@@ -1,13 +1,58 @@
 @import "~normalize.css";
 
 @import "_variables";
+
 @import "modules/hello.scss";
 
+html {
+	box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
 body {
-  background: $wtf;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+	background: #090638;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	padding: 16px;
+
+}
+
+.editor {
+	width: 100%;
+	max-width: 736px;
+}
+
+.form__buttons {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+.form__textarea {
+		width: 100%;
+		min-height: 175px;
+		border: none;
+		border-radius: 8px;
+		padding: 16px;
+	
+	}
+
+.button {
+	color: white;
+	background: rgb(66, 66, 241);
+	border: none;
+	border-radius: 2px;
+	width: 50px;
+	height: 20px;
+	margin: 16px 0 0;
+	&--save {
+		background: rgb(22, 138, 22);
+		margin: 16px 0 0 8px;
+	}
 }
