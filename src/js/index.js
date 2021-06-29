@@ -10,7 +10,7 @@ const textarea = document.querySelector('.textarea--js');
 const save = document.querySelector('.save--js');
 const load = document.querySelector('.load--js');
 
-save.addEventListener('click', () => {
+save.addEventListener('click', (e) => {
 	e.preventDefault();
 	localStorage.setItem('entry', textarea.value);
 });
